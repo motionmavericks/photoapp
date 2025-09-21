@@ -67,3 +67,5 @@ Thumbs.db
 .c9revisions
 .settings
 .swp
+.env*
+credentials*

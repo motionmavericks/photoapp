@@ -1,0 +1,628 @@
+# Secret Audit — motionmavericks/photoapp — 20250921
+
+- generated: 2025-09-21T15:57:04+10:00
+- gitleaks: 8.18.4
+- trufflehog: not_run
+- deep_scan: true
+
+## Findings (redacted)
+
+- Detector: generic-api-key
+  - Location: compose.yaml:53
+  - Commit: 
+  - Excerpt: SECRET: "REDACTED"
+- Detector: generic-api-key
+  - Location: compose.yaml:251
+  - Commit: 
+  - Excerpt: client add --id=REDACTED 
+- Detector: generic-api-key
+  - Location: compose.yaml:251
+  - Commit: 
+  - Excerpt: secret=REDACTED 
+- Detector: aws-access-token
+  - Location: assets/static/plugins/maplibre-gl-rtl-text/v0.2.3/maplibre-gl-rtl-text.js:2
+  - Commit: 
+  - Excerpt: REDACTED
+- Detector: generic-api-key
+  - Location: frontend/tests/unit/config.js:250
+  - Commit: 
+  - Excerpt: Key: "REDACTED"
+- Detector: generic-api-key
+  - Location: frontend/tests/unit/model/rest_test.js:186
+  - Commit: 
+  - Excerpt: Token: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/api/oidc_redirect_test.go:39
+  - Commit: 
+  - Excerpt: Secret = "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/api/session_test.go:361
+  - Commit: 
+  - Excerpt: Token := "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/api/session_test.go:387
+  - Commit: 
+  - Excerpt: Token := "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/api/session_test.go:399
+  - Commit: 
+  - Excerpt: Token := "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/api/session_test.go:411
+  - Commit: 
+  - Excerpt: Token := "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_add_test.go:46
+  - Commit: 
+  - Excerpt: ClientID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_fixtures.go:29
+  - Commit: 
+  - Excerpt: ClientUID:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_fixtures.go:47
+  - Commit: 
+  - Excerpt: ClientUID:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_fixtures.go:65
+  - Commit: 
+  - Excerpt: ClientUID:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_fixtures.go:83
+  - Commit: 
+  - Excerpt: ClientUID:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_fixtures.go:101
+  - Commit: 
+  - Excerpt: ClientUID:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_fixtures.go:119
+  - Commit: 
+  - Excerpt: ClientUID:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_fixtures.go:137
+  - Commit: 
+  - Excerpt: ClientUID:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:77
+  - Commit: 
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:197
+  - Commit: 
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:212
+  - Commit: 
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:246
+  - Commit: 
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:262
+  - Commit: 
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:295
+  - Commit: 
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:335
+  - Commit: 
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:357
+  - Commit: 
+  - Excerpt: ClientName: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:367
+  - Commit: 
+  - Excerpt: ClientName: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:371
+  - Commit: 
+  - Excerpt: ClientName: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:375
+  - Commit: 
+  - Excerpt: ClientName: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:389
+  - Commit: 
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:396
+  - Commit: 
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_test.go:213
+  - Commit: 
+  - Excerpt: authToken := "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_test.go:240
+  - Commit: 
+  - Excerpt: authToken := "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_login_test.go:283
+  - Commit: 
+  - Excerpt: Password: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_login_test.go:306
+  - Commit: 
+  - Excerpt: Password: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_login_test.go:329
+  - Commit: 
+  - Excerpt: Password: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:30
+  - Commit: 
+  - Excerpt: authToken:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:41
+  - Commit: 
+  - Excerpt: authToken:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:57
+  - Commit: 
+  - Excerpt: authToken:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:73
+  - Commit: 
+  - Excerpt: authToken:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:106
+  - Commit: 
+  - Excerpt: authToken:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:117
+  - Commit: 
+  - Excerpt: authToken:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:128
+  - Commit: 
+  - Excerpt: authToken:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:144
+  - Commit: 
+  - Excerpt: authToken:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:159
+  - Commit: 
+  - Excerpt: authToken:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:257
+  - Commit: 
+  - Excerpt: authToken:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:521
+  - Commit: 
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:545
+  - Commit: 
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:569
+  - Commit: 
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:594
+  - Commit: 
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_user_test.go:988
+  - Commit: 
+  - Excerpt: Password:  "REDACTED;
+- Detector: generic-api-key
+  - Location: internal/entity/passcode_fixtures.go:22
+  - Commit: 
+  - Excerpt: secret=REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/passcode_fixtures.go:23
+  - Commit: 
+  - Excerpt: secret=REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/passcode_fixtures.go:24
+  - Commit: 
+  - Excerpt: secret=REDACTED"
+- Detector: generic-api-key
+  - Location: frontend/src/locales/translations.json:1
+  - Commit: 
+  - Excerpt: Authentication":"REDACTED"
+- Detector: generic-api-key
+  - Location: internal/form/connect_test.go:19
+  - Commit: 
+  - Excerpt: Token: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/form/client_test.go:170
+  - Commit: 
+  - Excerpt: ClientID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/form/client_test.go:174
+  - Commit: 
+  - Excerpt: ClientID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/form/oauth_create_token_test.go:73
+  - Commit: 
+  - Excerpt: Password:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/form/oauth_create_token_test.go:128
+  - Commit: 
+  - Excerpt: Password:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/form/oauth_create_token_test.go:139
+  - Commit: 
+  - Excerpt: Password:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/form/oauth_create_token_test.go:200
+  - Commit: 
+  - Excerpt: Password:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/service/hub/config_test.go:19
+  - Commit: 
+  - Excerpt: Key = "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/service/hub/config_test.go:20
+  - Commit: 
+  - Excerpt: Secret = "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/service/hub/testdata/hub2.yml:1
+  - Commit: 
+  - Excerpt: Key: REDACTED
+- Detector: generic-api-key
+  - Location: internal/service/hub/testdata/hub2.yml:2
+  - Commit: 
+  - Excerpt: Secret: REDACTED
+- Detector: generic-api-key
+  - Location: internal/service/hub/testdata/hub1.yml:1
+  - Commit: 
+  - Excerpt: Key: REDACTED
+- Detector: generic-api-key
+  - Location: internal/service/hub/testdata/hub3.yml:1
+  - Commit: 
+  - Excerpt: Key: REDACTED
+- Detector: generic-api-key
+  - Location: internal/service/hub/hub_test.go:225
+  - Commit: 
+  - Excerpt: Key = "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/service/hub/places/location.go:43
+  - Commit: 
+  - Excerpt: Key = "REDACTED"
+- Detector: generic-api-key
+  - Location: pkg/rnd/auth_key_test.go:20
+  - Commit: 
+  - Excerpt: secret=REDACTED
+- Detector: generic-api-key
+  - Location: prometheus.yml:8
+  - Commit: 
+  - Excerpt: client_id: "REDACTED"
+- Detector: generic-api-key
+  - Location: prometheus.yml:9
+  - Commit: 
+  - Excerpt: client_secret: "REDACTED"
+
+- Detector: generic-api-key
+  - Location: compose.yaml:53
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: SECRET: "REDACTED"
+- Detector: generic-api-key
+  - Location: compose.yaml:251
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: client add --id=REDACTED 
+- Detector: generic-api-key
+  - Location: compose.yaml:251
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: secret=REDACTED 
+- Detector: aws-access-token
+  - Location: assets/static/plugins/maplibre-gl-rtl-text/v0.2.3/maplibre-gl-rtl-text.js:2
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: REDACTED
+- Detector: generic-api-key
+  - Location: frontend/tests/unit/model/rest_test.js:186
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Token: "REDACTED"
+- Detector: generic-api-key
+  - Location: frontend/tests/unit/config.js:250
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Key: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/api/oidc_redirect_test.go:39
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Secret = "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/api/session_test.go:361
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Token := "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/api/session_test.go:387
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Token := "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/api/session_test.go:399
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Token := "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/api/session_test.go:411
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Token := "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_add_test.go:46
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_fixtures.go:29
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_fixtures.go:47
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_fixtures.go:65
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_fixtures.go:83
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_fixtures.go:101
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_fixtures.go:119
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_fixtures.go:137
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:30
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: authToken:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:41
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: authToken:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:57
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: authToken:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:73
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: authToken:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:106
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: authToken:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:117
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: authToken:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:128
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: authToken:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:144
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: authToken:    "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:159
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: authToken:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_fixtures.go:257
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: authToken:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_login_test.go:283
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Password: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_login_test.go:306
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Password: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_login_test.go:329
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Password: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:77
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:197
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:212
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:246
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:262
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:295
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:335
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:357
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientName: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:367
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientName: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:371
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientName: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:375
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientName: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:389
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:396
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:521
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:545
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:569
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_client_test.go:594
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientUID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_test.go:213
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: authToken := "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_session_test.go:240
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: authToken := "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/passcode_fixtures.go:22
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: secret=REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/passcode_fixtures.go:23
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: secret=REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/passcode_fixtures.go:24
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: secret=REDACTED"
+- Detector: generic-api-key
+  - Location: internal/entity/auth_user_test.go:988
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Password:  "REDACTED;
+- Detector: generic-api-key
+  - Location: internal/form/connect_test.go:19
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Token: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/form/client_test.go:170
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/form/client_test.go:174
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: ClientID: "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/form/oauth_create_token_test.go:73
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Password:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/form/oauth_create_token_test.go:128
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Password:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/form/oauth_create_token_test.go:139
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Password:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/form/oauth_create_token_test.go:200
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Password:   "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/service/hub/config_test.go:19
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Key = "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/service/hub/config_test.go:20
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Secret = "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/service/hub/testdata/hub2.yml:1
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Key: REDACTED
+- Detector: generic-api-key
+  - Location: internal/service/hub/testdata/hub2.yml:2
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Secret: REDACTED
+- Detector: generic-api-key
+  - Location: internal/service/hub/testdata/hub1.yml:1
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Key: REDACTED
+- Detector: generic-api-key
+  - Location: internal/service/hub/testdata/hub3.yml:1
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Key: REDACTED
+- Detector: generic-api-key
+  - Location: internal/service/hub/places/location.go:43
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Key = "REDACTED"
+- Detector: generic-api-key
+  - Location: internal/service/hub/hub_test.go:225
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Key = "REDACTED"
+- Detector: generic-api-key
+  - Location: pkg/rnd/auth_key_test.go:20
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: secret=REDACTED
+- Detector: generic-api-key
+  - Location: prometheus.yml:8
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: client_id: "REDACTED"
+- Detector: generic-api-key
+  - Location: prometheus.yml:9
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: client_secret: "REDACTED"
+- Detector: generic-api-key
+  - Location: frontend/src/locales/translations.json:1
+  - Commit: ba8b90b9e16fdcceb6842c6c9b1a837fff629140
+  - Excerpt: Authentication":"REDACTED"
+- Detector: generic-api-key
+  - Location: frontend/src/locales/translations.json:1
+  - Commit: 9273803dc2b97ab8d0b0d31b6bb1c9cacb7cc4f4
+  - Excerpt: Authentication":"REDACTED"
+- Detector: generic-api-key
+  - Location: frontend/src/locales/translations.json:1
+  - Commit: 6b8fd031f7c67fb37bdc7cac824eac5fbab96ff1
+  - Excerpt: Authentication":"REDACTED"
+- Detector: generic-api-key
+  - Location: frontend/src/locales/translations.json:1
+  - Commit: 5e0070e7804df600f44a3867e7d043fa858bc717
+  - Excerpt: Authentication":"REDACTED"
+- Detector: generic-api-key
+  - Location: frontend/src/locales/translations.json:1
+  - Commit: c3cf50236678d20e4a0648f9b16a41a5430e9bf6
+  - Excerpt: Authentication":"REDACTED"
+
+## Remediation plan
+- Replace hard-coded secrets with env vars or secret manager references.
+- Add .gitignore for .env*, credentials, and build artifacts.
+- Add pre-commit hook to run `gitleaks protect`.
+- Rotate any exposed keys at the provider.
+
+## History rewrite (optional)
+- Only performed if CONFIRM_HISTORY_REWRITE=true.
+- Force-push required. May break forks and SHAs.
